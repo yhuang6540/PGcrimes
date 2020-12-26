@@ -315,7 +315,9 @@ table th, td{
     }
     
     .suggestions tr{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         border-top: thin solid;
         /height: 300px;
     }
