@@ -325,6 +325,7 @@ table th, td{
     
     .suggestions td{
         display: flex;
+        flex-direction: column;
         /padding-left: 42%;
         /position: relative; 
         /border-top: none;
