@@ -332,12 +332,13 @@ table th, td{
         padding-left: 42%;
         position: relative; 
         border-top: none;
-        border: solid;
+        /border: solid;
         /justify-content: space-between;
     }
     
     .suggestions td::before{
-        display: inline-block;
+        display: flex;
+        align-items: center;
         position: absolute;
         padding: 15px;
         left: 0;
@@ -347,7 +348,7 @@ table th, td{
         width: 30%;
         background: #7ae0c7;
         content: attr(data-col-title);
-        border: solid
+        /border: solid
     }
     
     
