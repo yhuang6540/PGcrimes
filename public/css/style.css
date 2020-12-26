@@ -320,12 +320,14 @@ table th, td{
     }
     
     .suggestions td{
+        display: flex;
         padding-left: 42%;
         position: relative; 
         border-top: none;
     }
     
     .suggestions td::before{
+        display: flex;
         position: absolute;
         padding: 15px;
         left: 0;
