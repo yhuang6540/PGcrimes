@@ -315,6 +315,7 @@ table th, td{
     .suggestions tr{
         display: block;
         border-top: thin solid;
+        /height: 300px;
     }
     
     .suggestions tr:not(:last-child){
@@ -322,22 +323,23 @@ table th, td{
     }
     
     .suggestions td{
-        display: block;
-        padding-left: 42%;
-        position: relative; 
-        border-top: none;
+        display: flex;
+        /padding-left: 42%;
+        /position: relative; 
+        /border-top: none;
         border: solid;
+        justify-content: space-between;
     }
     
     .suggestions td::before{
         display: inline-block;
-        position: absolute;
-        padding: 15px;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        font-weight: bold;
-        width: 30%;
+        /position: absolute;
+        /padding: 15px;
+        /left: 0;
+        /top: 0;
+        /bottom: 0;
+        /font-weight: bold;
+        /width: 30%;
         background: #7ae0c7;
         content: attr(data-col-title);
         border: solid
