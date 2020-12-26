@@ -1,8 +1,19 @@
+
+
 //api from 2020-01-01 to 2020-12-13 but limited by 1000 results
 let apiURL = "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json?$where=date%20between%20%272020-01-01%27%20and%20%272020-02-01%27"
 
 //let apiURL = "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json"
 //orginal api link
+
+/**hamburger menu for mobile**/
+const hamburger = document.getElementById("hamburger");
+const navlink = document.getElementById("menu");
+
+hamburger.addEventListener("click", ()=>{
+    navlink.classList.toggle("show");
+});
+
 
 /********** search ************* */
 const casesArray = [];
@@ -77,7 +88,13 @@ function displayMatches() {
 
 /********add results to table******* */
 function getResultTable(matchArray) {
-    suggestions.innerHTML = "<tr><th>Case ID</th><th>Date</th><th>Crime Type</th><th>Street Address</th></tr>";
+    tablehead.innerHTML = `
+            <tr>
+                <th>Case ID</th>
+                <th>Date</th>
+                <th>Crime Type</th>
+                <th>Street Name</th>
+              </tr>`;
     const monthNames = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.",
         "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
 
@@ -88,19 +105,22 @@ function getResultTable(matchArray) {
         let date = new Date(incident.date)
         return `
         <tr>
-            <td>${incident.incident_case_id}</td>
-            <td>${monthNames[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear()}</td>
-            <td>${incident.clearance_code_inc_type}</td>
-            <td>${incident.street_address}</td>
+            <td data-col-title="Case ID">${incident.incident_case_id}</td>
+            <td data-col-title="Date">${monthNames[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear()}</td>
+            <td data-col-title="Crime Type">${incident.clearance_code_inc_type}</td>
+            <td data-col-title="Street Name">${incident.street_address}</td>
         </tr>
         `;
     }).join('');
-    suggestions.innerHTML += html;
+    //suggestions.innerHTML += html;
+    tablebody.innerHTML = html;
 }
 
 
 const searchInput = document.getElementById("searchin"); //search bar
-const suggestions = document.querySelector(".suggestions"); //result table
+const tablehead = document.querySelector(".tablehead");
+const tablebody = document.querySelector(".tablebody");
+//result table
 const searchBtn = document.getElementById("btngo");  // click go button
 const dropdownInput = document.getElementById("crimes"); //drop down
 
