@@ -308,7 +308,7 @@ table th, td{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        max-width: 300px;
+        /max-width: 300px;
     }
     .suggestions thead{
         display: none;
@@ -327,24 +327,24 @@ table th, td{
     }
     
     .suggestions td{
-        display: flex;
-        flex-direction: column;
-        /padding-left: 42%;
-        /position: relative; 
-        /border-top: none;
+        /display: block;
+        /flex-direction: column;
+        padding-left: 42%;
+        position: relative; 
+        border-top: none;
         border: solid;
-        justify-content: space-between;
+        /justify-content: space-between;
     }
     
     .suggestions td::before{
         display: inline-block;
-        /position: absolute;
-        /padding: 15px;
-        /left: 0;
-        /top: 0;
-        /bottom: 0;
-        /font-weight: bold;
-        /width: 30%;
+        position: absolute;
+        padding: 15px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        font-weight: bold;
+        width: 30%;
         background: #7ae0c7;
         content: attr(data-col-title);
         border: solid
