@@ -308,6 +308,7 @@ table th, td{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        max-width: 300px;
     }
     .suggestions thead{
         display: none;
