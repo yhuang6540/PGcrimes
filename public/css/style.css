@@ -305,9 +305,6 @@ table th, td{
     .suggestions{
         box-shadow: none;
         border: none;
-        /display: flex;
-        /justify-content: center;
-        /flex-direction: column;
     }
     .suggestions thead{
         display: none;
