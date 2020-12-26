@@ -310,7 +310,7 @@ table th, td{
         display: none;
     }
     
-    .suggestions tr, td{
+    .suggestions tr{
         display: block;
         border-top: thin solid;
     }
