@@ -17,7 +17,7 @@ html{
 /************nav section*************/
 .nav {
     display: flex;
-    background-color: #7ae0c7;
+    background-color: white;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 120%;
@@ -66,15 +66,15 @@ html{
 }
   
 .menu li a:hover {
-    color:white;
+    color: rgba(128, 128, 128, 0.377);
 }
 
 .menu li a:active {
-    /color:white;
+    color:gray;
 }
 
 .menu li a.highlightCurrentPage {
-    color:white;
+    color:gray;
 }
 
 /*main logo*/
