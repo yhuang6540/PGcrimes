@@ -305,6 +305,7 @@ table th, td{
     .suggestions{
         box-shadow: none;
         border: none;
+        margin-top: 50px;
     }
     .suggestions thead{
         display: none;
