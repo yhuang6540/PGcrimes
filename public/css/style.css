@@ -23,7 +23,7 @@ html{
     font-size: 120%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     justify-content: space-between;
-    align-items: center;
+    /align-items: center;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
@@ -51,7 +51,8 @@ html{
 
 .menu li{
     display: flex;
-    align-items: center;
+    padding-top: 50px;
+    /align-items: center;
 }
 
 .menu li a{
@@ -209,13 +210,16 @@ table th, td{
 
 /************* style for footer***********/
 .footer-distributed {
-  background-color: #155E58;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  background-color:#97679B;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
+  padding: 20px 50px;
   margin-top: 5%;
   font-family: helvetica;
 }
@@ -260,13 +264,13 @@ table th, td{
 }
 
 
-.footer-top img {
+.footer-distributed img {
     max-width: 35px;
     height: 35px;
 }
 
 /*footer img change when hover*/
-.footer-top a:hover{
+.footer-distributed a:hover{
     transform:scale(1.2); 
     -webkit-transform:scale(1.2);
 }
@@ -350,7 +354,7 @@ table th, td{
         justify-content: center;
     }
     
-    ..footer-top{
+    .footer-top{
         justify-content: center;
     }
 

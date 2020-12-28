@@ -56,7 +56,7 @@
 
   <!--*******foot section*******-->
   <footer class="footer-distributed">
-    <div class="footer-top">
+    <!--div class="footer-top"-->
       <!--ul class="footer-links">
         <li><a href="index.html" class="link-1">Home</a></li>
         <li> <a href="about.html">About</a></li>
@@ -65,10 +65,21 @@
       </ul-->
       <p>University Of Maryland | Inst 377 | 2020</p>
       <a href="https://github.com/vivthai/PGcrimes"><img src="./image/Octocat.png"></a>
-    </div>
+    <!--/div-->
 
     
 
   </footer>
+
+  <script>
+    /**hamburger menu for mobile**/
+const hamburger = document.getElementById("hamburger");
+const navlink = document.getElementById("menu");
+
+hamburger.addEventListener("click", ()=>{
+    navlink.classList.toggle("show");
+});
+
+  </script>
 </body>
 </html>
