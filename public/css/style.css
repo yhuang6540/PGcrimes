@@ -10,9 +10,6 @@ Center aligns the Title of the page and the description. */
 *{
     margin: 0;
 }
-html{
-    min-width: 375px;
-}
 
 /************nav section*************/
 .nav {
@@ -23,8 +20,7 @@ html{
     font-size: 120%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     justify-content: space-between;
-    /align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
 }
 
@@ -33,7 +29,7 @@ html{
     border: 0;
     background-color: transparent;
     font-size: 30px;
-    color: #155E58;
+    color: black;
     cursor: pointer;
     margin: 20px;
     display: none;
@@ -46,24 +42,22 @@ html{
 .menu{
     display: flex;
     list-style-type: none;
-    margin: 20px;
 }
 
 .menu li{
     display: flex;
-    padding-top: 50px;
-    /align-items: center;
+    align-items:flex-end;
 }
 
 .menu li a{
     text-decoration: none;
-    color:#155E58;
-    padding: 10px;
+    color:black;
+    padding-right: 20px;
 }
   
 .menu li a:visited {
     text-decoration: none;
-    color:#155E58;
+    color:black;
 }
   
 .menu li a:hover {
@@ -80,8 +74,8 @@ html{
 
 /*main logo*/
 .nav .navlogo{
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 100px;
     margin: 20px;
 }
 
@@ -153,7 +147,7 @@ h1 {
 #btngo{
     width: 20%; 
     height: 30px;
-    background-color: #155E58;
+    background-color: rgb(28, 59, 28);
     color: white;
     border: none;
     font-weight: bold;
@@ -180,14 +174,15 @@ table {
 
 
 table thead{
-    background-color: #7ae0c7;
-    color: black;
+    background-color: #97679B;
+    color: white;
     font-family: helvetica;
 }
 
 table th, td{
     padding: 15px;
     text-align: center;
+    font-family: helvetica;
 }
 
 .suggestions tbody tr:nth-child(even) {
@@ -195,7 +190,7 @@ table th, td{
   background-color:#b4e4cc9f 
   background-color:rgba(128, 128, 128, 0.329);*/
   
-  background-color:#b4e4cc9f ;
+  background-color: white;
 }
 .suggestions tbody tr:nth-child(odd) {
  /*background-color: #fff;
@@ -203,7 +198,7 @@ table th, td{
  background-color: #ff431459;
  background-color:#b4e4cc5e*/
  
- background-color: #ff431459;
+ background-color: #C4B1C9;
 }
 
 
@@ -213,7 +208,7 @@ table th, td{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  background-color:#97679B;
+  background-color:#6B3C66;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -291,11 +286,17 @@ table th, td{
         display: none;
         width: 100%;
     }
+    .menu li a{
+        padding-right: 0;
+        padding-top: 20px;
+    }
+
     .menu.show{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
+        padding: 0;
     }
     .hamburger{
         display: block;
@@ -341,7 +342,7 @@ table th, td{
         bottom: 0;
         font-weight: bold;
         width: 30%;
-        background: #7ae0c7;
+        background: #97679B;
         content: attr(data-col-title);
     }
     
