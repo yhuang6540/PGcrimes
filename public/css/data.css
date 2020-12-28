@@ -81,57 +81,8 @@
     font-family: helvetica;
   }
   
-  .nav {
-      display: flex;
-      flex-direction: row;
-      background-color: #7ae0c7;
-      /*font-family: 'Bebas Neue', cursive;
-      font-family: Helvetica, sans-serif;*/
-      font-family: Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 120%;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-      justify-content: space-between;
-    }
+
   
-    .menu{
-  
-      display: flex;
-      flex-direction: row;
-      flex-wrap:wrap;
-      margin-top: auto;
-    }
-  
-    .nav .navlogo{
-      display: flex;
-      flex-direction: row;
-      flex-wrap:wrap;
-  
-    width: 150px;
-    height: auto;
-    margin: 20px;
-      
-    
-  
-    }
-    a:link {
-      
-      color:#155E58;
-  
-    }
-    
-    a:visited {
-     
-      color:#155E58;
-    }
-    
-    a:hover {
-      color:white;
-    }
-    
-    a:active {
-      color:white;
-    }
   .addToGraphText{
 
 color:black;
