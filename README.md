@@ -16,9 +16,9 @@ That includes the following changes:
 - reorginze the code
 
  # PGcrime Heroku Site
- Orginal version: https://pgcrime.herokuapp.com/
- 
  Newer version: https://pgcrimev2.herokuapp.com/
+ 
+ Orginal version: https://pgcrime.herokuapp.com/
  
  # Supported Browsers
  * Google Chrome for Desktop and Mobile
