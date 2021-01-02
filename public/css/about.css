@@ -65,6 +65,21 @@
 
 /*mobile view*/
 @media screen and (max-width:767px){
+    .name{
+        font-size: 1.2em;
+        margin: 20px;
+        margin-top: 50px;
+    }
+    
+    
+    .wrapper dt{
+        font-size: 1em;
+    }
+    
+    .team{
+        margin-bottom: 50px;
+    }
+    
     .team div{
         flex-direction: column;
         justify-content:flex-end;
