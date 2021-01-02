@@ -145,12 +145,14 @@ table tbody{
     .suggestions td::before{
         display: flex;
         align-items: center;
+        justify-content: center;
         position: absolute;
         padding: 15px;
         left: 0;
         top: 0;
         bottom: 0;
         font-weight: bold;
+        font-size: 15px;
         width: 30%;
         background: #97679B;
         color: #f2f1ef;
