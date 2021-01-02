@@ -1,0 +1,160 @@
+/********************body section***********/
+
+
+/*webpage title*/
+h1 {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+/*map image*/
+.mainPageImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.mainImage {
+  height: auto;
+  width: 30%;
+}
+
+/*****search bar section****/
+#search{
+    width: 80%; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    align-items: center;
+}
+
+.searchline1{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 35px;
+}
+
+/*drop down*/
+#crimes{
+    padding: 5px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: #155E58;
+    box-shadow: 0 2px 4px 0 #3C4F2C;
+    margin-right: 10px;
+    color: #3e3e3e;
+}
+/*search bar*/
+#searchin{
+    height: 30px;
+    width: 30vw;
+    min-width: 200px;
+    box-shadow: 0 2px 4px 0 #3C4F2C;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: #155E58;
+
+}
+
+/*search button*/
+#btngo{
+    width: 20%; 
+    height: 30px;
+    background-color: #6E9C48;
+    color: #fefefe;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 #3C4F2C
+}
+
+
+/****table***/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin-top:100px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border: 3px solid black;
+    border-width: thin;
+    border-color: #155E58;
+}
+
+
+table thead{
+    background-color: #97679B;
+    color: #f2f1ef;
+    font-family: helvetica;
+}
+
+table th, td{
+    padding: 15px;
+    text-align: center;
+    font-family: helvetica;
+}
+
+table tbody{
+    color: #3e3e3e;
+}
+
+
+.suggestions tbody tr:nth-child(even) {
+  background-color: #fefefe;
+}
+
+.suggestions tbody tr:nth-child(odd) {
+ background-color: #C4B1C9;
+}
+
+/*mobile view*/
+@media screen and (max-width:767px){
+    /*table*/
+    .suggestions{
+        box-shadow: none;
+        border: none;
+    }
+    .suggestions thead{
+        display: none;
+    }
+    
+    .suggestions tr{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-top: thin solid;
+    }
+    
+    .suggestions tr:not(:last-child){
+        margin-bottom: 5px;
+    }
+    
+    .suggestions td{
+        padding-left: 42%;
+        position: relative; 
+        border-top: none;
+    }
+    
+    .suggestions td::before{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 15px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        font-weight: bold;
+        width: 30%;
+        background: #97679B;
+        color: #f2f1ef;
+        content: attr(data-col-title);
+    }
+    
+}

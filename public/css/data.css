@@ -1,28 +1,22 @@
-@media only screen and (max-width: 767px) {
-    p.a, h1, .intro {
-        margin-left: 0 !important;
-        text-align: center;
-    }
-  }
-  
-  .para {
+h1 {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.requestInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.para {
     font-family: helvetica;
     font-weight: bold;
     text-align: center;
+    color: #2a2a2a;
     }
-
-  #postCrimeTypeContent {
-    font-family: helvetica;
-    text-align: center;
-  }
-
-  #addTypebtn{
-    align-items: center;
-    text-align: center;
-    margin-left: 42.5%;
-
-  }
-  
 
   #crimeInput{
     display: flex;
@@ -33,241 +27,13 @@
     margin-bottom: 2%;
   }
 
-  table, th, td {
-      border: 1px solid black;
-  
-      border-collapse: collapse;
-      
-    }
-  
-  th,td{
-    
-    padding: 15px;
-    text-align: center;
-    word-wrap: break-word;
-      max-width:0;
-  }
-  /*  add id="t01" to table tag for the next three things to work  *
-  #t01 tr:nth-child(even) {
-    background-color: #eee;
-  }
-  #t01 tr:nth-child(odd) {
-   background-color: #fff;
-  }
-  #t01 th {
-    background-color: black;
-    color: white;
-  }*/
-  
-  .suggestions tr:nth-child(even) {
-    /*background-color: #eee;
-    background-color:#b4e4cc9f 
-    background-color:rgba(128, 128, 128, 0.329);*/
-    
-    background-color:#b4e4cc9f ;
-  }
-  .suggestions tr:nth-child(odd) {
-   /*background-color: #fff;
-   background-color: #e0937967;
-   background-color: #ff431459;
-   background-color:#b4e4cc5e*/
-   
-   background-color: #ff431459;
-  }
-  .suggestions th {
-    /*background-color: #7ae0c7;*/
-    background-color: #7ae0c7;
-    color: black;
-    font-family: helvetica;
-  }
-  
-
-  
-  .addToGraphText{
-
-color:black;
-
-
-  }
-
-
-    .nav .highlightCurrentPage {
-  
-  color:white
-  
-    }
-  
-  .title{
-    margin-left: 50px;
-  
-  }
-  
-    body{
-      font-size: 14pt;
-  }
-  
-  #search{
-      width: 80%; 
-      margin: auto; 
-      display: block; 
-      text-align: center; 
-      margin-top: 50px;
-      
-      
-  }
-  
-  #searchin{
-      float: left;
-      width: 90%; 
-      height: 30px;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-      border-radius: 5px;
-      border-width: thin;
-      border-color: #155E58;
-      margin-bottom: 30px;
-  }
-  
-  #btngo{
-      float: left;
-      width: 10%; 
-      height: 30px;
-      background-color: #155E58;
-      color: white;
-      border: none;
-      font-weight: bold;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075)
-  }
-  
-  #list{
-       padding: 0;
-       list-style-type: none;
-       display: none; 
-       position: absolute; 
-       z-index: 9999; 
-       width: 80%; 
-       margin-top: 30px;
-       max-height: 120px;
-       overflow: hidden;
-       overflow-y: scroll;
-  }
-  
-  #list > li{
-       text-align: left;
-       padding: 5px;
-       display: none;
-  }
-  
-  #list > li:hover{
-        background-color: #eee;
-  }
-  
-  
-  
-  table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid black;
-    margin-top:100px;
-   
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    border-radius: 5px;
-    border-width: thin;
-    border-color: #155E58;
-  }
-  
-  
-  .mainPageImage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  
-  
-  }
-  .mainImage {
-    height: auto;
-    width: 30%;
-   
-  }
-  
-  h1 {
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    color:black;
-  }
-  
-  
-  button[type="submit"]{
-  
-      float: left;
-      max-width: 15%; 
+#addTypebtn{
+      width: 50px;
       height: 35px;
-      background-color: #155E58;
-      color: white;
-      border: none;
-      font-weight: bold;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075)
-      
-  }
-  
-  .filtersubmitdiv{
-  
-    display: flex;
-  }
-  /*
-  .searchbar{
-    margin-top:25px;
-   margin-left:283px;
-   width:100%;
-  }
-  .bar{
-    border-radius:0;
-    box-shadow: 2px 3px 0px -2px #ccc;
-    padding:10px;
-    border:0px;
-    outline: none;
-    border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #CCC;
-  }
-  .bar:hover{
-    box-shadow: 3px 6px 7px -3px #ccc;
-  }
-  */
-  
-  
-  
-  
-  
-  /* Media but not such we need this */
-  
-  @media (max-width: 600px) {
-
-   
-  .dropdown{
-  
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  
-  }
-  
-  .h1 {
-    margin-left: 0px;
-    text-align: center;
-  }
-  
-  .h2{
-    margin-left: 0px;
-    text-align: center;
-  }
-  
-  .filtersubmitdiv{
-    margin-left: 100px;
-  }
-
+      background-color: #6E9C48;
+    color: #fefefe;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 #3C4F2C
+}

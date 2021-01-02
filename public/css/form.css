@@ -1,6 +1,4 @@
-body{
-    font-family: "Helvetica";
-}
+
 section{
     height: 70vp;
     width: 100%;
@@ -15,11 +13,10 @@ section{
     text-align: center;
 }
 p.a {
-    margin-left: 50px;
     margin-bottom: 50px;
     font: 16px Helvetica;
     text-align: center;
-   
+    max-width: 540px;
   }  
 .container{
     width: 90%;
@@ -27,7 +24,7 @@ p.a {
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 0px 20px #00000010;
-    background-color: #D0EEDF;
+    background-color: #EDDDF5;
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -42,29 +39,14 @@ p.a {
     padding: 4px;
     font-size: 16px;
     border: 1px solid rgba(128, 128, 128, 0.199);
-    background-color: #ffffff; 
+    background-color: #fefefe; 
     margin-top: 5px;
 }
 textarea{
     resize: vertical;
 }
-.help{
-    padding: 5%;
-    margin-top: 1px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    background-color:#EFD9DC;
-   
-}
-.main {    
-    line-height: 1.5;
-    max-width: 1000px;
-    margin: auto;
-}
 
-.help p{
-    display: block;
-    margin-inline-start: 40px;
-}
+
 
 button[type="submit"]{
     width: 100%;
@@ -75,8 +57,8 @@ button[type="submit"]{
     font-size: 24px;
     border-radius: 8px;
     font-family: "Helvetica";
-    color: rgb(0, 0, 0);
-    background-color: #7ae0c7;
+    color: #2a2a2a;
+    background-color: #AE8FD9;
     text-align: center;
     cursor: pointer;
     margin-top: 10px;
@@ -85,8 +67,8 @@ button[type="submit"]{
     transition: .3s ease background;
 }
 button[type="submit"]:hover{
-    background-color: #155E58;
-    color: white;
+    background-color: #9D82C4;
+    color: #e0ffff;
 }
 ul.no-bullets {
     list-style-type: none; /* Remove bullets */
@@ -94,12 +76,3 @@ ul.no-bullets {
     margin: 0; /* Remove margins */
   }
 
-
-/*.help{
-    padding-top: 50px;
-    padding-right: 80px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-    font-size: 16px;
- 
-} 

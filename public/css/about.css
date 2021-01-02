@@ -1,37 +1,8 @@
-body{
-    font-family: "Helvetica";
-}
-
-
-.title {
-
-    margin-bottom: -5px;
-    text-align: center;
-}
-.intro {
-  margin-left: 50px;
-  font: 16px Roboto, sans-serif;
-  text-align: center;
-}  
-
-
-.wrapper p{
-    display: block;
-    margin-inline-start: 40px;
-   
-}
-
 
 .main {    
     line-height: 1.5;
     max-width: 1000px;
     margin: auto;
-}
-
-.wrapper{
-    padding: 5%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    background-color: #b4e4cc9f;
 }
 
 .name {
@@ -40,37 +11,95 @@ body{
     margin: 50px;
 }
 
+/*first container*/
+.wrapper{
+    padding: 5%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: #F4F5F5;
+}
+
+.wrapper dt{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+/*second container*/
 .team{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     padding: 5%;
-    background-color: #b4e4cc9f;
+    background-color: #F4F5F5;
 }
 
 .team img {
     vertical-align:middle;
-    margin-top: 10px;
     border-radius: 50%;
     max-width: 200px;
     height: 200px;
     filter: grayscale(100%);
 }
 
-.v, .z, .p, .t, .h {
-    margin: 10px;
+.team div{
     display: flex;
-    list-style-type: none;
-}
-.team p {
-    display: block;
-    margin-inline-start: 40px;
+    margin-top: 50px;
+    align-items: center;
 }
 
-ul{
-    list-style-type: none;
+.team .v{
+    margin-top: 0px;
 }
 
-.main {
-  margin-bottom: 20px;
-
+.team dl{
+    padding: 50px;
 }
 
+.team dt{
+    padding: 20px;
+    padding-left: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/*mobile view*/
+@media screen and (max-width:767px){
+    .team div{
+        flex-direction: column;
+        justify-content:flex-end;
+        margin: 10px;
+    }
+    
+    div .h, 
+    div .h dl, 
+    div .h dd{
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .team img{
+        max-width: 150px;
+        height: 150px;
+    }
+    
+    .team dl{
+        padding: 0px;
+    }
+    
+    .team dt{
+        display: none;
+    }
+    
+    .team dd{
+        padding: 20px;
+        margin-left: 0;
+    }
+    
+    .team span{
+        font-weight: bold;
+    }
+    
+
+}

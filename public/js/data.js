@@ -10,10 +10,7 @@ async function getData() {
     .then(res => res.json())
     .then((json) => {
       let listSize = json.data.length;
-      console.log("listSize:" + listSize);
       json.data.forEach(element => {
-        console.log(element.crimeType);
-        console.log(element.searchNum);
         let addToChart = { 'label': element.crimeType, y: element.searchNum };
         chartValues.push(addToChart);
       });
