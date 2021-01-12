@@ -14,6 +14,7 @@ That includes the following changes:
 - logo and icon change
 - overall colors change
 - reorginze the code
+- contact us form submit as Google Form now
 
  # PGcrime Heroku Site
  Newer version: https://pgcrimev2.herokuapp.com/
